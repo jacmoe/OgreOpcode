@@ -1,0 +1,320 @@
+Index: Ice/IceAABB.cpp
+===================================================================
+--- Ice/IceAABB.cpp	(revision 1582)
++++ Ice/IceAABB.cpp	(working copy)
+@@ -37,7 +37,7 @@
+ // Precompiled Header
+ #include "Stdafx.h"
+ 
+-using namespace IceMaths;
++using namespace Opcode;
+ 
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ /**
+Index: Ice/IceAllocator.cpp
+===================================================================
+--- Ice/IceAllocator.cpp	(revision 1582)
++++ Ice/IceAllocator.cpp	(working copy)
+@@ -12,7 +12,7 @@
+ #include "StdAfx.h"
+ #include <malloc.h>
+ 
+-using namespace IceCore;
++using namespace Opcode;
+ 
+ //#define ZERO_OVERHEAD_RELEASE
+ #define NEW_CODE
+Index: Ice/IceBitArray.cpp
+===================================================================
+--- Ice/IceBitArray.cpp	(revision 1582)
++++ Ice/IceBitArray.cpp	(working copy)
+@@ -22,7 +22,7 @@
+ // Precompiled Header
+ #include "StdAfx.h"
+ 
+-using namespace IceCore;
++using namespace Opcode;
+ 
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ /**
+Index: Ice/IceContainer.cpp
+===================================================================
+--- Ice/IceContainer.cpp	(revision 1582)
++++ Ice/IceContainer.cpp	(working copy)
+@@ -24,7 +24,7 @@
+ // Precompiled Header
+ #include "StdAfx.h"
+ 
+-using namespace IceCore;
++using namespace Opcode;
+ 
+ // Static members
+ #ifdef CONTAINER_STATS
+Index: Ice/IceHPoint.cpp
+===================================================================
+--- Ice/IceHPoint.cpp	(revision 1582)
++++ Ice/IceHPoint.cpp	(working copy)
+@@ -44,7 +44,7 @@
+ // Precompiled Header
+ #include "Stdafx.h"
+ 
+-using namespace IceMaths;
++using namespace Opcode;
+ 
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ // Point Mul = HPoint * Matrix3x3;
+Index: Ice/IceIndexedTriangle.cpp
+===================================================================
+--- Ice/IceIndexedTriangle.cpp	(revision 1582)
++++ Ice/IceIndexedTriangle.cpp	(working copy)
+@@ -27,7 +27,7 @@
+ // Precompiled Header
+ #include "Stdafx.h"
+ 
+-using namespace IceMaths;
++using namespace Opcode;
+ 
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ /**
+Index: Ice/IceMatrix3x3.cpp
+===================================================================
+--- Ice/IceMatrix3x3.cpp	(revision 1582)
++++ Ice/IceMatrix3x3.cpp	(working copy)
+@@ -51,7 +51,7 @@
+ // Precompiled Header
+ #include "Stdafx.h"
+ 
+-using namespace IceMaths;
++using namespace Opcode;
+ 
+ // Cast operator
+ Matrix3x3::operator Matrix4x4() const
+Index: Ice/IceMatrix4x4.cpp
+===================================================================
+--- Ice/IceMatrix4x4.cpp	(revision 1582)
++++ Ice/IceMatrix4x4.cpp	(working copy)
+@@ -54,7 +54,7 @@
+ // Precompiled Header
+ #include "Stdafx.h"
+ 
+-using namespace IceMaths;
++using namespace Opcode;
+ 
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ /**
+Index: Ice/IceOBB.cpp
+===================================================================
+--- Ice/IceOBB.cpp	(revision 1582)
++++ Ice/IceOBB.cpp	(working copy)
+@@ -36,7 +36,7 @@
+ // Precompiled Header
+ #include "Stdafx.h"
+ 
+-using namespace IceMaths;
++using namespace Opcode;
+ 
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ /**
+Index: Ice/IcePlane.cpp
+===================================================================
+--- Ice/IcePlane.cpp	(revision 1582)
++++ Ice/IcePlane.cpp	(working copy)
+@@ -36,7 +36,7 @@
+ // Precompiled Header
+ #include "Stdafx.h"
+ 
+-using namespace IceMaths;
++using namespace Opcode;
+ 
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ /**
+Index: Ice/IcePoint.cpp
+===================================================================
+--- Ice/IcePoint.cpp	(revision 1582)
++++ Ice/IcePoint.cpp	(working copy)
+@@ -64,7 +64,7 @@
+ // Precompiled Header
+ #include "Stdafx.h"
+ 
+-using namespace IceMaths;
++using namespace Opcode;
+ 
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ /**
+Index: Ice/IceRandom.cpp
+===================================================================
+--- Ice/IceRandom.cpp	(revision 1582)
++++ Ice/IceRandom.cpp	(working copy)
+@@ -27,7 +27,7 @@
+ // Precompiled Header
+ #include "Stdafx.h"
+ 
+-using namespace IceCore;
++using namespace Opcode;
+ 
+ void IceCore::	SRand(udword seed)
+ {
+Index: Ice/IceRay.cpp
+===================================================================
+--- Ice/IceRay.cpp	(revision 1582)
++++ Ice/IceRay.cpp	(working copy)
+@@ -77,7 +77,7 @@
+ // Precompiled Header
+ #include "Stdafx.h"
+ 
+-using namespace IceMaths;
++using namespace Opcode;
+ 
+ float Ray::SquareDistance(const Point& point, float* t)	const
+ {
+Index: Ice/IceRevisitedRadix.cpp
+===================================================================
+--- Ice/IceRevisitedRadix.cpp	(revision 1582)
++++ Ice/IceRevisitedRadix.cpp	(working copy)
+@@ -56,7 +56,7 @@
+ // Precompiled Header
+ #include "StdAfx.h"
+ 
+-using namespace IceCore;
++using namespace Opcode;
+ 
+ #define INVALIDATE_RANKS	mCurrentSize|=0x80000000
+ #define VALIDATE_RANKS		mCurrentSize&=0x7fffffff
+Index: Ice/IceSegment.cpp
+===================================================================
+--- Ice/IceSegment.cpp	(revision 1582)
++++ Ice/IceSegment.cpp	(working copy)
+@@ -40,7 +40,7 @@
+ // Precompiled Header
+ #include "Stdafx.h"
+ 
+-using namespace IceMaths;
++using namespace Opcode;
+ 
+ float Segment::SquareDistance(const Point& point, float* t)	const
+ {
+Index: Ice/IceTriangle.cpp
+===================================================================
+--- Ice/IceTriangle.cpp	(revision 1582)
++++ Ice/IceTriangle.cpp	(working copy)
+@@ -27,7 +27,7 @@
+ // Precompiled Header
+ #include "Stdafx.h"
+ 
+-using namespace IceMaths;
++using namespace Opcode;
+ 
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ /**
+Index: Ice/IceUtils.cpp
+===================================================================
+--- Ice/IceUtils.cpp	(revision 1582)
++++ Ice/IceUtils.cpp	(working copy)
+@@ -27,7 +27,7 @@
+ // Precompiled Header
+ #include "Stdafx.h"
+ 
+-using namespace IceCore;
++using namespace Opcode;
+ 
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ /**
+Index: OPC_HybridModel.cpp
+===================================================================
+--- OPC_HybridModel.cpp	(revision 1582)
++++ OPC_HybridModel.cpp	(working copy)
+@@ -318,7 +318,7 @@
+ 	return UsedBytes;
+ }
+ 
+-inline_ void ComputeMinMax(Point& min, Point& max, const VertexPointers& vp)
++inline_ void ComputeMinMax_HM(Point& min, Point& max, const VertexPointers& vp)
+ {
+ 	// Compute triangle's AABB = a leaf box
+ #ifdef OPC_USE_FCOMI	// a 15% speedup on my machine, not much
+@@ -388,7 +388,7 @@
+ 				while(NbTris--)
+ 				{
+ 					mIMesh->GetTriangle(VP, *T++);
+-					ComputeMinMax(TmpMin, TmpMax, VP);
++					ComputeMinMax_HM(TmpMin, TmpMax, VP);
+ 					Min.Min(TmpMin);
+ 					Max.Max(TmpMax);
+ 				}
+@@ -401,7 +401,7 @@
+ 				while(NbTris--)
+ 				{
+ 					mIMesh->GetTriangle(VP, BaseIndex++);
+-					ComputeMinMax(TmpMin, TmpMax, VP);
++					ComputeMinMax_HM(TmpMin, TmpMax, VP);
+ 					Min.Min(TmpMin);
+ 					Max.Max(TmpMax);
+ 				}
+@@ -433,7 +433,7 @@
+ 				while(NbTris--)
+ 				{
+ 					mIMesh->GetTriangle(VP, *T++);
+-					ComputeMinMax(TmpMin, TmpMax, VP);
++					ComputeMinMax_HM(TmpMin, TmpMax, VP);
+ 					Min_.Min(TmpMin);
+ 					Max_.Max(TmpMax);
+ 				}
+@@ -446,7 +446,7 @@
+ 				while(NbTris--)
+ 				{
+ 					mIMesh->GetTriangle(VP, BaseIndex++);
+-					ComputeMinMax(TmpMin, TmpMax, VP);
++					ComputeMinMax_HM(TmpMin, TmpMax, VP);
+ 					Min_.Min(TmpMin);
+ 					Max_.Max(TmpMax);
+ 				}
+Index: OPC_IceHook.h
+===================================================================
+--- OPC_IceHook.h	(revision 1582)
++++ OPC_IceHook.h	(working copy)
+@@ -54,6 +54,8 @@
+ 	#include ".\Ice\IceFPU.h"
+ 	#include ".\Ice\IceMemoryMacros.h"
+ 
++	namespace Opcode
++	{
+ 	namespace IceCore
+ 	{
+ 		#include ".\Ice\IceAllocator.h"
+@@ -87,3 +89,4 @@
+ 		#include ".\Ice\IceLSS.h"
+ 	}
+ 	using namespace IceMaths;
++}
+\ No newline at end of file
+Index: OPC_OptimizedTree.cpp
+===================================================================
+--- OPC_OptimizedTree.cpp	(revision 1582)
++++ OPC_OptimizedTree.cpp	(working copy)
+@@ -357,7 +357,7 @@
+ 	return true;
+ }
+ 
+-inline_ void ComputeMinMax(Point& min, Point& max, const VertexPointers& vp)
++inline_ void ComputeMinMax_OT(Point& min, Point& max, const VertexPointers& vp)
+ {
+ 	// Compute triangle's AABB = a leaf box
+ #ifdef OPC_USE_FCOMI	// a 15% speedup on my machine, not much
+@@ -403,7 +403,7 @@
+ 		if(Current.HasPosLeaf())
+ 		{
+ 			mesh_interface->GetTriangle(VP, Current.GetPosPrimitive());
+-			ComputeMinMax(Min, Max, VP);
++			ComputeMinMax_OT(Min, Max, VP);
+ 		}
+ 		else
+ 		{
+@@ -415,7 +415,7 @@
+ 		if(Current.HasNegLeaf())
+ 		{
+ 			mesh_interface->GetTriangle(VP, Current.GetNegPrimitive());
+-			ComputeMinMax(Min_, Max_, VP);
++			ComputeMinMax_OT(Min_, Max_, VP);
+ 		}
+ 		else
+ 		{
