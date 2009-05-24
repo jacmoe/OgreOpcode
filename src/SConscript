@@ -1,0 +1,49 @@
+######################
+# Ogre Opcode Source #
+######################
+
+#####################
+#     Options       #
+#####################
+
+SRC='''	BP_Endpoint.cpp
+				BP_Proxy.cpp
+				BP_Scene.cpp
+				IOgreCollisionShape.cpp
+				OgreBoxCollisionShape.cpp
+				OgreCapsule.cpp
+				OgreCollisionContext.cpp
+				OgreCollisionManager.cpp
+				OgreCollisionObject.cpp
+				OgreEntityCollisionShape.cpp
+				OgreMeshCollisionShape.cpp
+				OgreOpcodeDebugObject.cpp
+				OgreOpcodeLine.cpp
+				OgreOpcodeMath.cpp
+				OgreOpcodeRay.cpp
+				OgreOrientedBox.cpp
+				OgrePtrCollisionShape.cpp
+				OgreSphereMeshCollisionShape.cpp
+				OgreTerrainCollisionShape.cpp
+				OgreTriangle.cpp
+'''
+
+SUBDIRS='''	Opcode
+						'''
+
+####################
+#Import the specialised environment
+Import('env')
+import os
+
+objs = []
+
+for subdir in Split(SUBDIRS):
+	o = env.SConscript( subdir + '/SConscript')
+	objs.append(o)
+
+o = env.BuildObject(Split(SRC))
+objs.append(o)
+
+Return('objs')
+
